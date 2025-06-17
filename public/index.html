@@ -4,10 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 1</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <div class="layout">
+        <header class="layout__header">
+            <div class="header__logo">
+                <h1 class="logo__text">Proyecto Js</h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="list__item">
+                        <a href="index.html" class="list__link">Inicio</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="reloj.html" class="list__link">Reloj</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="sobremi.html" class="list__link">Sobre mi</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="contacto.html" class="list__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="layout__slider">
+            <button class="slider__btn-prev">
+                <i class="slider__icon fa-solid fa-caret-left"></i>
+            </button>
+            <div class="slider__slides">
+                 <article class="slides__item slides__item--active">
+                    <img src="../assets/img/hojas.jpg" alt="hojas" class="slides__img">
+                </article>
+                <article class="slides__item">
+                    <img src="../assets/img/cielo.jpg" alt="cielo" class="slides__img">
+                </article>
+                <article class="slides__item">
+                    <img src="../assets/img/rojo.jpg" alt="rojo" class="slides__img">
+                </article>
+                <article class="slides__item">
+                    <img src="../assets/img/" alt="cielo" class="slides__img">
+                </article>
+            </div>
+            <button class="slider__btn-next">
+                <i class=" slider__icon fa-solid fa-caret-right"></i>
+            </button>
+        </section>
+        <main class="layout__articles">
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba1</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba2</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba3</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba4</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba5</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba 6</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+            <article class="articles__article">
+                <h3 class="article__title">articulo de prueba 7</h3>
+                <span class="article__date">1/1/1</span>
+                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
+                <button class="article__btn"> leer mas</button>
+            </article>
+        </main>
+        <aside class="layout__aside">
+            <header class="aside__header">
+                <div class="header__container-title">
+                    <h3 class="header__title">
+                        <span class="title__span">Quien soy</span>
+                    </h3> 
+                </div>
+                <div class="header__container-img">
+                        <img src="../assets/img/caracol.jpg" alt="caracol" class="header__img">
+                </div>
+                    <p class="header__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nulla quis eaque veritatis quas ratione nihil ducimus beatae explicabo nostrum ex labore consequatur adipisci aliquid dolore, blanditiis dignissimos officia mollitia?
+                    </p>
+                
+            </header>
+            <form action="" class="aside__login">
+                <div class="header__container-title">
+                    <h3 class="header__title">
+                        <span class="title__span">Identificate</span>
+                    </h3> 
+                </div>
+                <div class="login__form-group">
+                    <label for="name" class="login__label">nombre: </label>
+                    <input type="text" name="name" id="name" class="login__input">
+                </div>
+                <div class="login__form-group">
+                    <label for="email" class="login__label">email: </label>
+                    <input type="email" name="email" id="email" class="login__input">
+                </div>
+                <div class="login__form-group">
+                    <label for="passwprd" class="login__label">nombre:</label>
+                    <input type="password" name="password" id="password" class="login__input">
+                </div>
+                <input type="button" value="Entrar" class=" login__submit">
+            </form>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados a apy</p>
+        <p class="footer__top">Ir arriba</p>
+    </footer>
+    <div class="themes">
+        <div class="themes__green"></div>
+        <div class="themes__red"></div>
+        <div class="themes__blue"></div>
+    </div>
 </body>
 </html>
