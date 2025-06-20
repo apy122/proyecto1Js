@@ -1,3 +1,4 @@
+/*Estilos todo*/
 :root{
     --bg-layout:white;
     --color-primary:#1f87c4;
@@ -5,6 +6,8 @@
     --bg-nav: #333333;
     --color-link: white;
     --color-shadow:#b7b4b4;
+    --color-date: #908d8d;
+    --color-light: #59b0e2;
 }
 
 html{
@@ -19,6 +22,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Estilos layout*/
 .layout{
     display: grid;
     grid-template-areas: 
@@ -33,6 +37,7 @@ body{
     margin: 2rem auto;
 }
 
+/*Estilos header*/
 .layout__header{
     grid-area: header;
     margin-bottom: 2rem;
@@ -47,6 +52,8 @@ body{
     color: var(--color-text-logo);
     font-size: 5rem;
 }
+
+/*Estilos nav*/
 .header__nav{
     width: 95%;
     height: 5rem;
@@ -73,7 +80,7 @@ body{
     background-color:  var(--color-primary);
 }
 
-
+/*Estilos slides*/
 .layout__slider{
     grid-area: slider;
     position: relative;
@@ -123,16 +130,63 @@ body{
     left: auto;
     right: 1rem;
 }
+.slides__item{
+    position: absolute;
+    transition: opacity 600ms linear;
+    opacity: 0;
+}
+
+.slides__item--active{
+    opacity: 1;
+}
 
 
 
-
-
-
+/*Estilos articulos*/
 
 .layout__articles{
     grid-area: main;
+    margin-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
+.articles__article{
+    display: flex;
+    flex-direction: column;
+    gap: 0,5rem;
+}
+.article__title{
+    font-size: 3rem;
+}
+.article__date{
+    color: var(--color-date);
+}
+.article__body{
+    text-align: justify;
+}
+.article__btn{
+    width: 12rem;
+    padding: 1.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-link);
+    transition:  all 300ms linear;
+}
+.article__btn:hover{
+    background-color: var(--color-light);
+}
+
+
+
+
+
+
+
+
+/*Estilo aside*/
 .layout__aside{
     grid-area: aside;
 }
