@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 1</title>
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.2-web/css/all.min.css">
-    <link rel="stylesheet" href="publiccss/reset.css">
+    <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
-    <script src="public/js/main.js" defer></script>
+    <link rel="stylesheet" href="public/css/responsive.css">
+    <script src="public/js/main.js" type="module"></script>
 </head>
 <body>
     <div class="layout">
@@ -33,7 +34,7 @@
             </nav>
         </header>
         <section class="layout__slider">
-            <button class="slider__btn-prev">
+            <button class="slider__btn-prev" id="slider__btn-prev">
                 <i class="slider__icon fa-solid fa-caret-left"></i>
             </button>
             <div class="slider__slides">
@@ -46,57 +47,12 @@
                 <article class="slides__item">
                     <img src="assets/img/rojo.jpg" alt="rojo" class="slides__img">
                 </article>
-                <article class="slides__item">
-                    <img src="assets/img/" alt="cielo" class="slides__img">
-                </article>
             </div>
-            <button class="slider__btn-next">
+            <button class="slider__btn-next" id="slider__btn-next">
                 <i class=" slider__icon fa-solid fa-caret-right"></i>
             </button>
         </section>
         <main class="layout__articles">
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba1</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba2</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba3</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba4</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba5</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba 6</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
-            <article class="articles__article">
-                <h3 class="article__title">articulo de prueba 7</h3>
-                <span class="article__date">1/1/1</span>
-                <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit. Eaque nesciunt minus nemo, quod, voluptas rerum praesentium reprehenderit aut animi illum quasi est repellat. Id sint quae tenetur ipsa.</p>
-                <button class="article__btn"> leer mas</button>
-            </article>
         </main>
         <aside class="layout__aside">
             <header class="aside__header">
@@ -115,7 +71,7 @@
             </header>
             <form action="" class="aside__login">
                 <div class="header__container-title">
-                    <h3 class="header__title">
+                    <h3 class="login__title">
                         <span class="title__span">Identificate</span>
                     </h3> 
                 </div>
@@ -128,11 +84,15 @@
                     <input type="email" name="email" id="email" class="login__input">
                 </div>
                 <div class="login__form-group">
-                    <label for="passwprd" class="login__label">nombre:</label>
+                    <label for="password" class="login__label">password:</label>
                     <input type="password" name="password" id="password" class="login__input">
                 </div>
-                <input type="button" value="Entrar" class=" login__submit">
+                <input type="submit" value="Entrar" class=" login__submit">
             </form>
+            <div class="aside__data aside__data--hide">
+                <p class="data__text">bienvenido <span class="data__name"></span></p>
+                <button class="data__logout">cerrar sesion</button>
+            </div>
         </aside>
     </div>
     <footer class="footer">
