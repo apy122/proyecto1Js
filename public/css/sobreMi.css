@@ -1,6 +1,7 @@
 @import url("../css/main.css");
 @import url("../../assets/font/fontawesome-free-6.1.2-web/css/all.min.css");
 @import url("./main/reset.css");
+@import url("./main/responsive.css");
 
 :root{
     --color-collapse-header: #f6f6f6 ;
