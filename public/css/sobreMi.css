@@ -75,3 +75,78 @@
 .accordion__collapse--open .fa-chevron-up{
     opacity: 1;
 }
+@media (max-width: 956px) {
+    .layout{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside";
+    }
+    .main__accordion {
+        gap: 0.7rem;
+    }
+    .main__title {
+        font-size: 2.2rem;
+    }
+    .collapse__title {
+        font-size: 1.3rem;
+    }
+    .collapse__header > .fa-solid {
+        font-size: 1.2rem;
+    }
+    .collapse__text {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 696px) {
+    .main__title {
+        font-size: 1.7rem;
+    }
+    .collapse__title {
+        font-size: 1.1rem;
+    }
+    .collapse__header > .fa-solid {
+        font-size: 1rem;
+    }
+    .collapse__text {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__title {
+        font-size: 1.2rem;
+    }
+    .collapse__title {
+        font-size: 0.95rem;
+    }
+    .collapse__header {
+        padding: 0.3rem 0.6rem;
+    }
+    .collapse__header > .fa-solid {
+        font-size: 0.9rem;
+    }
+    .collapse__text {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .main__title {
+        font-size: 1rem;
+    }
+    .collapse__title {
+        font-size: 0.8rem;
+    }
+    .collapse__header {
+        padding: 0.2rem 0.4rem;
+    }
+    .collapse__header > .fa-solid {
+        font-size: 0.7rem;
+    }
+    .collapse__text {
+        padding: 0.3rem;
+    }
+}

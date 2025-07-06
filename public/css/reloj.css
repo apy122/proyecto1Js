@@ -22,3 +22,49 @@
     font-weight: bold;
         text-align: center;
 }
+@media (max-width: 956px) {
+    .layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside aside"
+}
+    .main__clock {
+        width: 90%;
+        margin-right: 2rem;
+    }
+    .clock__time {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 696px) {
+    .main__clock {
+        width: 100%;
+        margin-right: 0;
+        padding: 0.5rem;
+    }
+    .clock__time {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__clock {
+        padding: 0.2rem;
+    }
+    .clock__time {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .main__clock {
+        border-width: 2px;
+    }
+    .clock__time {
+        font-size: 1.5rem;
+    }
+}
