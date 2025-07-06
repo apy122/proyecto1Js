@@ -1,0 +1,23 @@
+@import url("../css/main.css");
+@import url("../../assets/font/fontawesome-free-6.1.2-web/css/all.min.css");
+@import url("./main/reset.css");
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+}
+.main__clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 5px dashed var(--bg-nav);
+    padding: 1rem;
+    margin-right: 5rem;
+}
+.clock__time {
+    font-size: 8rem;
+    font-weight: bold;
+        text-align: center;
+}
