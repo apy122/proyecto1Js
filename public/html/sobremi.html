@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/sobreMi.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/sobreMi.css">
+    <script src="../js/aboutme.js" type="module"></script>
 </head>
 <body>
-    <div class="layout">
+     <div class="layout">
         <header class="layout__header">
             <div class="header__logo">
                 <h1 class="logo__text">Proyecto Js</h1>
@@ -34,23 +32,43 @@
         <main class="layout__main">
             <h2 class="main__title">Sobre mi</h2>
             <div class="main__accordion">
-                <article class="accordion__colapse accordion__colapse--open"></article>
-                <header class="collapse__header">
-                    <i class="fa-solid fa-chevron-down fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down fa-chevron-up"></i>
-                    <p class="collapse__title">quienes somos</p>
-                </header>
-                <div class="collapse__body">
-                    <p class="collapse__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis animi, obcaecati itaque odio porro quos provident totam modi ut laudantium illum iusto. Labore ipsum repellat explicabo dignissimos dolorem cumque?</p>
-                </div>
-
+                 <article class="accordion__collapse ">
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">Quienes somos</p>
+                    </header>
+                    <div class="collapse__body">
+                        <p class="collapse__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
+                <article class="accordion__collapse ">
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">Servicios</p>
+                    </header>
+                    <div class="collapse__body">
+                        <p class="collapse__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
+                 <article class="accordion__collapse ">
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">Opiniones</p>
+                    </header>
+                    <div class="collapse__body">
+                        <p class="collapse__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                    </div>
+                </article>
             </div>
         </main>
         <aside class="layout__aside">
             <header class="aside__header">
                 <div class="header__container-title">
                     <h3 class="header__title">
-                        <span class="title__span">Quien soy</span>
+                        <span class="title__span">Opiniones</span>
                     </h3> 
                 </div>
                 <div class="header__container-img">
