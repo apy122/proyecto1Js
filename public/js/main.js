@@ -1,12 +1,13 @@
-import { sliders} from './main/sliders.js'
-import{ articles } from './main/articles.js'
-import {formulario} from './main/form.js'
-
+import { sliders} from './main/sliders.js';
+import{ articles } from './main/articles.js';
+import {formulario} from './main/form.js';
+import {colors} from './main/colors.js';
 addEventListener('DOMContentLoaded', () => {
    sliders();
    articles();
    upPage();
    formulario();
+   colors();
 
     });
 

@@ -150,3 +150,15 @@
         padding: 0.3rem;
     }
 }
+.footer__top{
+    cursor: pointer;
+}
+.themes__green{
+    background-color: green;
+}
+.themes__red{
+    background-color: red;
+}
+.themes__blue{
+    background-color: blue;
+}

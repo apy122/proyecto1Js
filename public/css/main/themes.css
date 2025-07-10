@@ -1,0 +1,58 @@
+.themes{
+    width: 5rem;
+    height: 12rem;
+    position: fixed;
+    left: 0;
+    top: 45%;
+    background-color: #333 ;
+    opacity: 0.8;
+
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    ;
+}
+.themes > div{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.theme__green{
+    background-color: #225051;
+}
+.theme__red{
+    background-color: #C14C39;
+}
+.theme__blue{
+    background-color: #3C93C8;
+}
+.theme__green--active{
+    background-image: url(../../../assets/img/hojas.jpg);
+    .header__logo{
+        background-color: #225051;
+    }
+    .article__btn{
+         background-color: #225051;
+    }
+}
+.theme__red--active{
+    background-image: url(../../../assets/img/rojo.jpg);
+    .header__logo{
+        background-color: #C14C39;
+    }
+    .article__btn{
+         background-color: #C14C39;
+    }
+}
+.theme__blue--active{
+    background-image: url(../../../assets/img/cielo.jpg);
+     .header__logo{
+        background-color: #3C93C8;
+    }
+    .article__btn{
+         background-color: #3C93C8;
+    }
+}
